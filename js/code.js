@@ -46,21 +46,16 @@ window.onload = function() {
 }
 
 function saludo() {
-    // buenos dias buenas noches
+    // buenos dias buenas noches buenas tardes
     let d = new Date();
     let header = document.getElementsByTagName("header")
     let footer = document.getElementsByTagName("footer")
     let encabezado = document.getElementById("saludo");
-    if (d.getHours() < 7 || d.getHours() > 17) {
-        encabezado.innerHTML = "¡Buenas noches!";
-        encabezado.style.color = "white";
-        header[0].style.backgroundColor = "#3E3730";
-        footer[0].style.backgroundColor = "#3E3730";
-    } else {
-        encabezado.innerHTML = "¡Buenos días!";
-        header[0].style.backgroundColor = "rgb(238, 107, 47)";
-        footer[0].style.backgroundColor = "rgb(238, 107, 47)";
-
-    }
+    if (d.getHours() <= 6 ) {
+        header.innerHTML = "¡Buenos dias!"
+    if (d.getHours() <= 14 ) {
+        header.innerHTML = "¡Buenas tardes!"
+    if (d.getHours() <= 21 ) {
+        header.innerHTML = "¡Buenas noches!"
 
 }
