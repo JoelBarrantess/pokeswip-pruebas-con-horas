@@ -44,10 +44,13 @@ function galleryRandom() {
 var a = new Date();
 //creado por https://joason.com
 var hora = a.getHours();
-if(hora >= 1 && hora<= 3){document.write("Buenas Noches")};
-if(hora >= 4 && hora<= 14){document.write("Buenos D&iacute;as")};
-if(hora >= 15 && hora<= 19){document.write("Buenas Tardes")};
-if(hora >= 20 && hora<= 24){document.write("Buenas Noches")};
+    let header = document.getElementsByTagName("header")
+    let footer = document.getElementsByTagName("footer")
+    let encabezado = document.getElementById("saludo");
+if(hora >= 1 && hora<= 3){header.innerHTML "Buenas Noches"};
+if(hora >= 4 && hora<= 14){header.innerHTML "Buenos D&iacute;as"};
+if(hora >= 15 && hora<= 19){header.innerHTML "Buenas Tardes"};
+if(hora >= 20 && hora<= 24){header.innerHTML "Buenas Noches"};
 
 
 }
