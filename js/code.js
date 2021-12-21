@@ -41,21 +41,12 @@ function galleryRandom() {
 
 }
 
-window.onload = function() {
-    saludo();
-}
-
-function saludo() {
-    // buenos dias buenas noches buenas tardes
-    let d = new Date();
-    let header = document.getElementsByTagName("header")
-    let footer = document.getElementsByTagName("footer")
-    let encabezado = document.getElementById("saludo");
-    if (d.getHours() <= 6 ) {
-        header.innerHTML = "¡Buenos dias!"
-    if (d.getHours() <= 14 ) {
-        header.innerHTML = "¡Buenas tardes!"
-    if (d.getHours() <= 21 ) {
-        header.innerHTML = "¡Buenas noches!"
+var a = new Date();
+//buenas noches buenos dias buenas tardes
+var hora = a.getHours();
+if(hora >= 1 && hora<= 3){header.innerHTML = "Buenas Noches"};
+if(hora >= 4 && hora<= 14){header.innerHTML = "Buenos D&iacute;as"};
+if(hora >= 15 && hora<= 19){header.innerHTML = "Buenas Tardes"};
+if(hora >= 20 && hora<= 24){header.innerHTML = "Buenas Noches"};
 
 }
