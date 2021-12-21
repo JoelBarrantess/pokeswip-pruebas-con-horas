@@ -42,7 +42,7 @@ function galleryRandom() {
 }
 
 var a = new Date();
-//creado por https://joason.com
+// horas saludos
 var hora = a.getHours();
     let header = document.getElementsByTagName("header")
     let footer = document.getElementsByTagName("footer")
